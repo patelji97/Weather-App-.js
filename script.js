@@ -14,15 +14,15 @@ const data = async function (search) {
 
     if (jsonData.cod == 400) {
         alert("Please Enter Location")
-        image.src = "error1.png";
+        image.src = "images/error1.png";
         city.innerHTML = "";
         temp.innerHTML = "";
         type.innerHTML = "";
     }
     if (jsonData.cod == 404) {
         alert("Please Enter Write Location")
-        image.src = "error2.png";
-        city.innerHTML = search;
+        image.src = "images/error2.png";
+        city.innerHTML = images/search;
         temp.innerHTML = "";
         type.innerHTML = "";
     }
@@ -33,15 +33,15 @@ const data = async function (search) {
     if (type.innerHTML == "Clouds") {
         image.src = "Clouds.png"
     } else if (type.innerHTML == "Clear") {
-        image.src = "clears.png"
+        image.src = "images/clears.png"
     } else if (type.innerHTML == "Rain") {
-        image.src = "rain.png"
+        image.src = "images/rain.png"
     } else if (type.innerHTML == "Snow") {
-        image.src = "rain.png"
+        image.src = "images/rain.png"
     } else if (type.innerHTML == "Haze") {
-        image.src = "haze.png"
+        image.src = "images/haze.png"
     } else if (type.innerHTML == "Strom") {
-        image.src = "strom.png"
+        image.src = "images/strom.png"
     }
     input.value = ""
 }
